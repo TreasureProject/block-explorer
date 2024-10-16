@@ -54,7 +54,7 @@ defineProps({
 
 <style lang="scss">
 .table-container {
-  @apply w-full rounded-lg shadow-md;
+  @apply w-full rounded-lg shadow-md border border-night-800;
 
   .table-body {
     @apply w-full overflow-auto;

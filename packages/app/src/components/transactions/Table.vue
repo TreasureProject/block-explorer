@@ -89,7 +89,7 @@
       </TableBodyColumn>
       <TableBodyColumn v-if="columns.includes('from') && columns.includes('to')" class="tablet-column">
         <div class="flex gap-x-2">
-          <div class="text-night-500">
+          <div class="text-night-100">
             <div>{{ t("transactions.table.from") }}</div>
             <div>{{ t("transactions.table.to") }}</div>
           </div>
@@ -404,14 +404,14 @@ function getDirection(item: TransactionListItem): Direction {
   .tablet-column {
     @apply hidden md:table-cell lg:hidden;
     .tablet-column-fee {
-      @apply flex text-xs text-night-500;
+      @apply flex text-xs text-night-100;
     }
   }
   .only-desktop {
     @apply hidden md:table-cell;
   }
   .table-initiator-container {
-    @apply gap-x-1 text-night-500;
+    @apply gap-x-1 text-night-100;
     a {
       @apply font-medium;
     }
@@ -449,7 +449,7 @@ function getDirection(item: TransactionListItem): Direction {
     @apply font-bold;
   }
   .transactions-not-found {
-    @apply my-0 table-cell items-start justify-start bg-night-1000 p-4 text-left text-night-500;
+    @apply my-0 table-cell items-start justify-start bg-night-1000 p-4 text-left text-night-100;
   }
   .badge-content {
     @apply flex items-center;

@@ -294,7 +294,7 @@ const gasUsedPercent = computed(() => {
     @apply text-night-500;
   }
   .transaction-info-field-value {
-    @apply text-night-500;
+    @apply text-night-100;
   }
   .transaction-table-label {
     @apply m-0 inline-flex w-[7rem] items-center whitespace-normal sm:w-[11.5rem];

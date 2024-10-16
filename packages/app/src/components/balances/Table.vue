@@ -151,10 +151,10 @@ const displayedBalances = computed(() => {
     @apply ml-2 inline-block min-w-[5rem] font-bold text-night-500;
   }
   .balance-data-value {
-    @apply font-bold text-night-500;
+    @apply font-bold text-night-100;
   }
   .balance-data-price {
-    @apply text-xs text-night-500;
+    @apply text-xs text-night-100;
   }
   .token-icon a {
     @apply flex-row-reverse;
