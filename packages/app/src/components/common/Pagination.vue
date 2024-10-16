@@ -180,12 +180,27 @@ const nextButtonQuery = computed(() => ({
 
 <style lang="scss">
 .pagination-container {
-  @apply flex flex-col-reverse items-center justify-center relative sm:flex-row;
-  .page-numbers-container {
-    @apply flex space-x-1 transition-opacity justify-center p-3;
-    &.disabled {
-      @apply pointer-events-none opacity-50;
+  @apply flex space-x-1 transition-opacity;
+  &.disabled {
+    @apply pointer-events-none opacity-50;
+  }
+
+  .pagination-page-button {
+    @apply rounded-md bg-night-1000 px-1.5 py-1 font-mono text-sm font-medium text-night-500 no-underline sm:px-2;
+    &:not(.disabled):not(.active):not(.dots) {
+      @apply hover:bg-night-800;
     }
+    &.disabled {
+      @apply cursor-not-allowed text-night-500;
+    }
+    &.active {
+      @apply z-10 bg-night-800;
+    }
+    &.dots {
+      @apply font-sans text-night-500 hover:bg-night-1000;
+    }
+    &.arrow {
+      @apply flex items-center;
 
     .pagination-page-button {
       @apply rounded-md bg-white px-1.5 py-1 font-mono text-sm font-medium text-neutral-700 no-underline sm:px-2;
