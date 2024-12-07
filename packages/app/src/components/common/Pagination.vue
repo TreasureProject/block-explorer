@@ -1,16 +1,5 @@
 <template>
   <div class="pagination-container">
-    <div class="page-size-container">
-      <Dropdown
-        class="page-size-dropdown"
-        v-model="computedPageSize"
-        :options="pageSizeOptions"
-        :show-above="true"
-        :pending="disabled"
-      />
-      <span class="page-size-text">{{ t("pagination.records") }}</span>
-    </div>
-
     <nav class="page-numbers-container" :class="{ disabled }" aria-label="Pagination">
       <PaginationButton
         :use-route="useQuery"
@@ -53,6 +42,17 @@
         <ChevronRightIcon class="chevron-icon" aria-hidden="true" />
       </PaginationButton>
     </nav>
+
+    <div class="page-size-container">
+      <Dropdown
+        class="page-size-dropdown"
+        v-model="computedPageSize"
+        :options="pageSizeOptions"
+        :show-above="true"
+        :pending="disabled"
+      />
+      <span class="page-size-text">{{ t("pagination.records") }}</span>
+    </div>
   </div>
 </template>
 
@@ -203,18 +203,18 @@ const nextButtonQuery = computed(() => ({
       @apply flex items-center;
 
     .pagination-page-button {
-      @apply rounded-md bg-white px-1.5 py-1 font-mono text-sm font-medium text-neutral-700 no-underline sm:px-2;
+      @apply rounded-md px-1.5 py-1 font-mono text-sm font-medium text-silver-500 no-underline sm:px-2 border border-transparent;
       &:not(.disabled):not(.active):not(.dots) {
-        @apply hover:bg-neutral-50;
+        @apply hover:bg-night-500 hover:border-night-400 text-silver-200;
       }
       &.disabled {
-        @apply cursor-not-allowed text-neutral-400;
+        @apply cursor-not-allowed text-silver-500;
       }
       &.active {
-        @apply z-10 bg-neutral-100;
+        @apply z-10 bg-night-700 text-silver-200;
       }
       &.dots {
-        @apply font-sans text-neutral-400 hover:bg-white;
+        @apply font-sans text-silver-500 hover:bg-night-1000;
       }
       &.arrow {
         @apply flex items-center;
@@ -226,9 +226,10 @@ const nextButtonQuery = computed(() => ({
     }
   }
   .page-size-container {
-    @apply relative left-0 flex items-center justify-center pb-2 sm:absolute sm:pb-0 sm:left-6;
+    @apply relative flex items-center justify-center pb-2 sm:pb-0;
+
     .page-size-text {
-      @apply text-gray-500 pl-2;
+      @apply text-silver-500 text-sm pl-2;
     }
     .page-size-dropdown {
       @apply w-16;
