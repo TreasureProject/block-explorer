@@ -1,12 +1,24 @@
 {
   "name": "block-explorer",
   "version": "1.0.0-development",
-  "title": "ZKsync Era Block Explorer",
-  "description": "ZKsync Era Block Explorer",
-  "author": "Matter Labs",
+  "title": "Treasure Block Explorer",
+  "description": "Treasurescan provides all the information to dive into transactions, blocks, contracts, tokens, NFTs, and much more within the Treasure network.",
+  "author": "Treasure",
+  "homepage": "https://treasure.lol",
   "license": "MIT",
-  "repository": "https://github.com/matter-labs/block-explorer",
+  "repository": "https://github.com/TreasureProject/block-explorer",
   "private": true,
+  "bugs": {
+    "url": "https://github.com/TreasureProject/block-explorer/issues"
+  },
+  "contributors": [
+    {
+      "author": "Matter Labs (https://github.com/matter-labs)"
+    },
+    {
+      "author": "Treasure (https://github.com/TreasureProject)"
+    }
+  ],
   "workspaces": [
     "packages/*"
   ],
@@ -22,7 +34,6 @@
     "db:create": "lerna run db:create",
     "db:drop": "lerna run db:drop",
     "hyperchain:configure": "ts-node scripts/setup-hyperchain-config"
-
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
@@ -35,15 +46,15 @@
     "@semantic-release/npm": "^9.0.0",
     "@semantic-release/release-notes-generator": "^10.0.3",
     "@types/node": "18.17.18",
+    "dotenv": "16.1.4",
+    "enquirer": "2.3.6",
     "eslint": "8.48.0",
     "husky": "8.0.1",
     "lerna": "^7.2.0",
+    "pg-connection-string": "2.6.2",
     "prettier": "2.8.4",
     "semantic-release": "^21.1.1",
-    "typescript": "4.7.4",
-    "enquirer": "2.3.6",
-    "dotenv": "16.1.4",
-    "pg-connection-string": "2.6.2"
+    "typescript": "4.7.4"
   },
   "engines": {
     "npm": ">=9.0.0",

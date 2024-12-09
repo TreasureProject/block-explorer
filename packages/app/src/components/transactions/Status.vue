@@ -412,7 +412,7 @@ const badges = computed(() => {
 
 .badge-additional-content {
   .badge-status-link-icon {
-    @apply text-night-500;
+    @apply text-silver-500;
   }
 
   .badge-status-link {
@@ -434,7 +434,7 @@ const badges = computed(() => {
   }
 
   &:hover .badge-status-link-icon {
-    @apply text-black;
+    @apply text-silver-400;
   }
 }
 
@@ -472,7 +472,7 @@ const badges = computed(() => {
   }
 
   &:hover {
-    @apply text-black;
+    @apply text-silver-400;
   }
 }
 .badge-status-popup-title {
@@ -515,7 +515,7 @@ const badges = computed(() => {
       @apply text-inherit;
 
       .badge-status-link-icon {
-        @apply text-black;
+        @apply text-silver-400;
       }
     }
   }
