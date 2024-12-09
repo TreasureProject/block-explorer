@@ -10,9 +10,24 @@
       "l2ChainId": 61166,
       "l2NetworkName": "Treasure",
       "maintenance": false,
-      "name": "Treasure",
+      "name": "treasure",
       "published": true,
       "rpcUrl": "https://rpc.treasure.lol",
+      "baseTokenAddress": "0x000000000000000000000000000000000000800A"
+    },
+    {
+      "apiUrl": "https://block-explorer.topaz.treasurescan.io",
+      "verificationApiUrl": "https://rpc-explorer-verify.topaz.treasure.lol",
+      "bridgeUrl": "https://app.treasure.lol/chain/bridge",
+      "hostnames": ["https://topaz.treasurescan.io"],
+      "icon": "https://ipfs.filebase.io/ipfs/QmT9TS1vsxxq4pToEXPouuYtDcpQZWZfh91NZdNXVQGPrY",
+      "l1ExplorerUrl": "https://sepolia.etherscan.io/",
+      "l2ChainId": 978658,
+      "l2NetworkName": "Treasure Topaz",
+      "maintenance": false,
+      "name": "treasureTopaz",
+      "published": true,
+      "rpcUrl": "https://rpc.topaz.treasure.lol",
       "baseTokenAddress": "0x000000000000000000000000000000000000800A"
     }
   ]
