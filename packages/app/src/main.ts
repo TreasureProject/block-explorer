@@ -41,7 +41,7 @@ app.use(i18n);
 app.use(testId);
 app.use(
   createGtm({
-    id: "GTM-P32NGSC3",
+    id: "GTM-KHZRN6Q2",
   })
 );
 const runtimeConfig = useRuntimeConfig();
