@@ -69,6 +69,10 @@ const props = defineProps({
 });
 
 const imgSource = computed(() => {
+  if (props.address == "0xb73e4f558F7d4436d77a18f56e4EE9d01764c641") {
+    return "https://assets.coingecko.com/coins/images/33951/standard/Smol_Coin_Icon.png?1703558329";
+  }
+
   return props.iconUrl || "/images/currencies/customToken.svg";
 });
 const { isReady: isImageLoaded } = useImage({ src: imgSource.value });
